@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.parquet
+tuning_log.csv
+best_params.json
