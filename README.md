@@ -14,14 +14,14 @@
 Обработка всех тестовых запросов с моделью эмбеддинга заняла 6 часов и показа очень плохой результат (0.34).
 Продумывать более умное решение с нейросетями времени не было, т.к на любое тестирование уходили бы часы.
 
-По запуску:
-На моём компьютере скрипт не выполнялся т.к требует около 10 ГБ оперативной памяти, на оптимизацию времени не хватило. Поэтому я запускал его в google colab, необходимы все файлы в той же папке.
-import os, sys
-from google.colab import drive
-drive.mount('/content/drive')
-PROJECT_PATH = '/content/drive/MyDrive/test_avito/final_version'
-sys.path.append(PROJECT_PATH)
-%cd {PROJECT_PATH}
+По запуску: \
+На моём компьютере скрипт не выполнялся т.к требует около 10 ГБ оперативной памяти, на оптимизацию времени не хватило. Поэтому я запускал его в google colab, необходимы все файлы в той же папке. \
+import os, sys \
+from google.colab import drive \
+drive.mount('/content/drive') \
+PROJECT_PATH = '/content/drive/MyDrive/test_avito/final_version' \
+sys.path.append(PROJECT_PATH) \
+%cd {PROJECT_PATH} \
 !python3 candidates_pipeline.py
 
 Если у вас мощный компьютер, можно запустить локально.
